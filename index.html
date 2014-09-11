@@ -1,61 +1,75 @@
 <!doctype html>
-<html lang="en">    
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <title>Air Crashes</title>
     <link rel="stylesheet" href="css/reveal.min.css">
-    <link rel="stylesheet" href="css/theme/default.css" id="theme">    
+    <link rel="stylesheet" href="css/theme/moon.css" id="theme">
     <!--Add support for earlier versions of Internet Explorer -->
     <!--[if lt IE 9]>
     <script src="lib/js/html5shiv.js"></script>
     <![endif]-->
 </head>
- 
+
 <body>
     <!-- Wrap the entire slide show in a div using the "reveal" class. -->
     <div class="reveal">
         <!-- Wrap all slides in a single "slides" class -->
         <div class="slides">
- 
+
             <!-- ALL SLIDES GO HERE -->
             <!-- Each section element contains an individual slide -->
             <section>
-                <h1>Air Crashes</h1>
+              <div>
+                <div style='position: relative; border: solid black 1px; background: yellow; color: black; z-index: 99; top: 455px; left: 362px; width: 234px; font-size: 0.7em'><p>JSConf EU</p></div>
+<img src='test-card.png'>
+              </div>
             </section>
- 
-            <section>
+            <section><!-- Title screen. -->
+            </section>
+
+            <section><!-- UAL 173 intro -->
 		<section data-state="year1978">
-                <h1>UAL 173</h1>
+                <h1>United 173</h1>
                 <p>28th December, 1978</p>
                 <p>17:10<p>
-		<p>Portland, Oregon</p>
+		            <p>Portland, Oregon</p>
+                <p>DC-8, Denver -> Portland, 189 souls</p>
+                <audio id='lefreak'><source src='le-freak-chic.mp3'></audio>
 		</section>
 		<section data-state="landing">
-		<h1>UAL 173</h1>
+		<h1>United 173</h1>
 		<table>
 		<tr class="fragment"><td>17:10</td><td>Landing gear 'thump'</td></tr>
-		<tr class="fragment"><td>17:12:20</td><td>UAL 173 to PDX: <q>&ldquo;We got a gear problem&rdquo;</q></td></tr>
-		<tr class="fragment"><td>18:13:50</td><td>UAL 173 to PDX: <q>&ldquo;Portland tower, United 173 heavy: Mayday, we're - the engines are flaming out, we're going down, we're not going to be able to make the airport!&rdquo;</q></td></tr>
-		<tr class="fragment"><td>18:14:35</td><td>Aircraft impacts power lines, crashes into woods near NE 158th Avenue and E Burnside Street.</td></tr>
-		<tr class="fragment"><td>18:14:35</td><td>Ten people die in the impact. 24 people are seriously injured.</td></tr>
+		<tr class="fragment"><td>17:12:20</td><td>UA 173 to PDX: <q>&ldquo;We got a gear problem&rdquo;</q></td></tr>
+		<tr class="fragment"><td>18:13:50</td><td>UA 173 to PDX: <q>&ldquo;Portland tower, United 173 heavy: Mayday, we're - the engines are flaming out, we're going down, we're not going to be able to make the airport!&rdquo;</q></td></tr>
+    <tr class="fragment"><td>18:14:25</td><td>Impact with powerlines near NE 158th Avenue and E Burnside St</td></tr>
+</tr>
 		</table>
 		</section>
+<section>
+  <h1>United 173</h1>
+  <img src='./ua173.jpg'>
+<p>Ten people die in the impact. 24 people are seriously injured.</p> </section>
+
+           </section>
             </section>
- 
-            <section>
+    <section><!-- Talk intro -->
 		<section>
 	                <h1>Air Crashes</h1>
         	        <p class='fragment'>Hi, I'm Dave Cridland.</p>
-	                <p class='fragment'>I work for Surevine.</p>
-			<p class='fragment'>15 years ago, I worked for Felspar.</p>
+                  <p class='fragment'>I've worked in and around the Internet since 1996.</p>
+	                <p class='fragment'>I work for Surevine. Security-conscious social/collaborative software for security-conscious clients.</p>
+			<p class='fragment'>15 years ago, I worked for Felspar. Server-side/browser-side javascript, enterprise software.</p>
 			<p class='fragment'>Air accident investigation reports mandatory reading.</p>
 		</section>
 		<section>
 			<h1>Air Crashes</h1>
 			<table>
 			<tr><td></td><th>Aircraft</th><th>Software Systems</th></tr>
-			<tr class='fragment'><td></td><td>Large and complicated systems</td><td>Large and complicated systems</td></tr>
-			<tr class='fragment'><td>Failure cases are:</td><td>Interesting, often cascade</td><td>Boring, often cascade</td></tr>
+			<tr class='fragment'><td></td><td>Large systems of interacting components</td><td>Large systems of interacting components</td></tr>
+			<tr class='fragment'><td>Failure cases are:</td><td>Complex error chains</td><td>Complex cascade failures</td></tr>
+      <tr class='fragment'><td>Serious failures:</td><td>&ldquo;Crashes&rdquo;</td><td>&ldquo;Crashes&rdquo;</td></tr>
 			<tr class='fragment'><td>When failure occurs:</td><td>Specialist investigators</td><td>Turn off and on again</td></tr>
 			</table>
 		</section>
@@ -64,19 +78,29 @@
 			<p>I'm not scared of flying.</p>
 			<p>Only two accident reports really scare me.</p>
 		</section>
+    <section><!-- Probably won't show this. -->
+      <h1>Terms</h1>
+      <dl>
+        <dt>PIC</dt><dd>Captain, "Pilot In Charge"</dd>
+        <dt>FO</dt><dd>First Officer (Right-hand seat)</dd>
+        <dt>FE</dt><dd>Flight Engineer (Movable rear seat)</dd>
+        <dt>PNF</dt><dd>"Pilot, Non-Flying" - usually Captain</dd>
+        <dt>PF</dt><dd>Pilot, Flying</dd>
+        <dt>CVR</dt><dd>Cockpit Voice Recorder</dd>
+      </dl>
+    </section>
             </section>
-	    <section>
-		<section>
-		<h1>UAL 173</h1>
+		<section><!-- United 173 explanation -->
+		<h1>United 173</h1>
 		<table>
 		<tr class="fragment"><th>Time</th><th>Fuel</th><td></td></tr>
 		<tr class="fragment"><td>14:47</td><td>46,700</td><td>Take off, Denver, CO</td></tr>
-		<tr class="fragment"><td>17:10</td><td>15,000</td><td>Estimated, PDX approach</td></tr>
-		<tr class="fragment"><td>17:38</td><td>7,000</td><td>Flight Engineer report</td></tr>
-		<tr class="fragment"><td>17:46</td><td>5,000</td><td>Flight Engineer report to FO</td></tr>
-		<tr class="fragment"><td>17:51</td><td>?</td><td>Captain tells FE will land with 4,000</td></tr>
+		<tr class="fragment"><td>17:10</td><td>14,800</td><td>Estimated, PDX approach</td></tr>
+		<tr class="fragment"><td>17:38</td><td>7,000</td><td>FE report</td></tr>
+		<tr class="fragment"><td>17:46</td><td>5,000</td><td>FE report to FO</td></tr>
+		<tr class="fragment"><td>17:51</td><td>?</td><td>PIC tells FE will land with 4,000</td></tr>
 		<tr class="fragment"><td>17:55</td><td>4,000</td><td>FE response to FO</td></tr>
-		<tr class="fragment"><td>18:03</td><td>?</td><td>Captain -> PDX: <q>&ldquo;[...] about 4,000 well, make it 3,000 pounds of fuel&rdquo;</q></td></tr>
+		<tr class="fragment"><td>18:03</td><td>?</td><td>PIC -> PDX: <q>&ldquo;[...] about 4,000 well, make it 3,000 pounds of fuel&rdquo;</q></td></tr>
 		<tr class="fragment"><td>18:06</td><td>?</td><td>FO: <q>&ldquo;We’re goin to lose an engine buddy&rdquo;</q></td></tr>
 		<tr class="fragment"><td>18:07</td><td>?</td><td><q>&ldquo;United 173 would like clearance [...], now&rdquo;</q></td></tr>
 		<tr class="fragment"><td>18:09</td><td>1,000</td><td>FE Report</td></tr>
@@ -84,49 +108,107 @@
 		<tr class="fragment"><td>18:15</td><td>Crash</td><td></td></tr>
 		</table>
 		</section>
+    <section><!-- CRM Intro -->
+    <section>
+      <h1>The Problem</h1>
+      <p><q>&ldquo;This accident exemplifies a recurring problem&rdquo;</q> - NTSB report</p>
+      <p>Blame assigned to Captain Malburn McBroom</p>
+      <p>Contributory factor is crew failure</p>
+    </section>
+    <section>
+      <h1>Related Crashes</h1>
+        <ul>
+            <li class='fragment'>1963 Tu-124 Neva River<ul>
+              <li>Landing gear problem, fuel exhaustion, 0 casualties.</ul>
+            <li class='fragment'>1969 SAS 933<ul>
+              <li>Landing gear problem, 15 fatalities.</ul>
+            <li class='fragment'>1972 Eastern 401<ul>
+              <li>Landing gear problem, 99 fatalities.</ul>
+            <li class='fragment'>Tenerife Airport Disaster
+          </ul>
+        </section>
+    </section>
 		<section>
-			<h1>UAL 173</h1>
-			<img src='./ua173.jpg'>
-		</section>
-		<section>
-			<h1>UAL 173</h1>
-			<p class='fragment'>Flight Engineer knew.</p>
-			<p class='fragment'>First Officer knew.</p>
-			<p class='fragment'>So why didn't the Captain?</p>
-		</section>
-		</section>
-		<section>
-			<h1>Alan Diehl</h1>
-			<p>Aviation Psychologist, NTSB</p>
-			<p>Sees Common Factor</p>
-		</section>
-		<section>
-			<section>
+			<section data-state='year1977'>
 				<h1>Tenerife</h1>
 				<p>27th March, 1977</p>
 				<p>18:00</p>
-				<p>Tenerife</p>
+				<p>Los Rodeos, Tenerife</p>
+        <audio id='abba'><source src='knowing-me-knowing-you-snippet.mp3'></audio>
 			</section>
 			<section>
 				<h1>Tenerife</h1>
 				<p>Cascade Failure:</p>
 				<ul>
-					<li>Bomb explodes in Las Palmas</li>	
-					<li>In-flight planes divert to Los Rodeos</li>
-					<li>Dense fog</li>
+					<li class='fragment'>Bomb explodes in Las Palmas, so...</li>
+					<li class='fragment'>... In-flight planes divert to Los Rodeos, where there is ...</li>
+					<li class='fragment'>... Dense low cloud, and ...</li>
+          <li class='fragment'>... lots of traffic.</li>
 				</ul>
 			</section>
+      <section>
+        <h1>Tenerife</h1>
+        <dl>
+          <dt>KL 4805</dt>
+          <dd>248 souls, Boeing 747</dd>
+          <dt>PA 1736</dt>
+          <dd>396 souls, Boeing 747</dd>
+        </dl>
+      </section>
+<section>
+  <h1>Tenerife</h1>
+  <div style='background: white; padding: 0; margin: 0'><img style='width:100%; border: 0' src='Map_Tenerife_Disaster_123.svg'/></div>
+  <p>&ldquo;The third one, sir, 1, 2, 3, third one.&rdquo;</p>
+</section>
+<section>
+  <h1>Tenerife</h1>
+  <div style='background: white; padding: 0; margin: 0'><img style='width:100%; border: 0' src='Map_Tenerife_Disaster_Miss3.svg'/></div>
+  <p>&ldquo;Wait a minute; we don't have ATC clearance.&rdquo;</p>
+</section>
+<section>
+  <h1>Tenerife</h1>
+  <table>
+    <tr><th style='width: 50%'>KL 4805</th><th>PA 1736</th></tr>
+    <tr class='fragment'><td colspan='2'>KLM: &ldquo;Ah roger, sir, we are cleared to the Papa Beacon flight level nine zero until intercepting the three two five. We are now at take-off&rdquo;</td></tr>
+    <tr class='fragment'><td>TWR: &ldquo;OK... </td><td><em>Stand by for take-off, I will call you.&rdquo;</em></td></tr>
+    <tr class='fragment'><td>&lt;whine&gt;</td><td><em>PA 1736: &ldquo;No... uh.&rdquo;</em></td></tr>
+    <tr class='fragment'><td>&lt;...&gt;</td><td><em>PA 1736: &ldquo;And we're still taxiing down the runway, the clipper one seven three six.</em></td></tr>
+    <tr class='fragment'><td colspan='2'>TWR: Ah, papa alpha one seven three six report the runway clear.</td></tr>
+  </table>
+</section>
+<section>
+  <h1>Tenerife</h1>
+  <div style='background: white; padding: 0; margin: 0'><img style='width:100%; border: 0' src='Map_Tenerife_Disaster_V1.svg'/></div>
+  <p>&ldquo;Goddamn that son-of-a-bitch is coming!&rdquo;</p>
+</section>
+<section>
+  <h1>Tenerife</h1>
+  <div style='background: white; padding: 0; margin: 0'><img style='width:100%; border: 0' src='Map_Tenerife_Disaster_Impact.svg'/></div>
+  <p>&ldquo;[Exclamation/expletive]&rdquo;</p>
+</section>
+<section>
+  <h1>Tenerife</h1>
+  <div style='background: white; padding: 0; margin: 0'><img style='width:100%; border: 0' src='Map_Tenerife_Disaster_Aftermath.svg'/></div>
+  <p>KL 4805 : All 248 killed.</p>
+  <p>PA 1726 : 335 fatalities, 61 survivors.</p>
+</section>
 		</section>
+    <section>
 		<section>
 			<h1>Crew Resource Management</h1>
 			<ul>
-				<li>Situational Awareness</li>
-				<li>Planning and Decision Making</li>
-				<li>Communications</li>
-				<li>Teamwork</li>
+				<li class='fragment'>Situational Awareness</li>
+				<li class='fragment'>Planning and Decision Making</li>
+				<li class='fragment'>Communications</li>
+				<li class='fragment'>Teamwork</li>
 			</ul>
 		</section>
-		<section>
+    <section>
+      <p>Leading people is one person's job...</p>
+      <p class='fragment'>... effective teamwork is everybody's job.</p>
+    </section>
+    </section>
+		<!-- <section>
 			<section>
 			<h1>AFR 447</h1>
 			<p>1st June, 2009</p>
@@ -152,51 +234,84 @@
 			<h1>AFR 447</h1>
 			<table>
 			<tr class='fragment'><td>02:11:43</td><td>Captain returns to cockpit.</td></tr>
-			
-		</section>
+
+		</section> -->
 		<section>
-			<section>
-			<h1>UAL 232</h1>
+			<section data-state='year1989'>
+			<h1>United 232</h1>
 			<p>19th July, 1989</p>
 			<p>15:16</p>
 			<p>Sioux City, Iowa</p>
+      <audio id='shout'><source src='shout-snippet.mp3'></audio>
 			</section>
 			<section>
-			<h1>UAL 232</h1>
+			<h1>United 232</h1>
 			<p class='fragment'>Flight Engineer Dudley Dvorak, radio: <q>&ldquo;This is United two thirty-two. We blew number two engine, and we've lost all hydraulics and we are only able to control, ah, level flight with the, ah, asymmetrical power settings. We have very little rudder or elevator.&rdquo;</q>
 			<p class='fragment'>Captain Al Haynes: <q>&ldquo;Okay. We're tryin' to go straight. We're not havin' much luck.&rdquo;</q></p>
 			<p class='fragment'>Captain Al Haynes: <q>&ldquo;[Laughs] We didn't do this thing on my last [performance check in a simulator].&rdquo;</q></p>
 			</section>
 			<section>
-			<h1>UAL 232</h1>
+			<h1>United 232</h1>
 			<p class='fragment'>Captain Al Haynes: <q>&ldquo;My name's Al Haynes.&rdquo;</q></p>
 			<p class='fragment'>Dennis E. Fitch: <q>&ldquo;Hi, Al. Denny Fitch.&rdquo;</q></p>
 			</section>
 		</section>
 		<section>
-			<h1>JAL 123</h1>
-			<p>12th August, 1985</p>
-			<p>18:24</p>
-			<p>Near Tokyo, Japan</p>
+      <section data-state='year1985'>
+  			<h1>JAL 123</h1>
+  			<p>12th August, 1985</p>
+  			<p>18:24</p>
+  			<p>Near Tokyo, Japan</p>
+        <p>747SR, 524 souls</p>
+        <audio id='toysoldiers'><source src='toy-soldiers-intro.mp3'></audio>
+      </section>
+      <section>
+        <h1>JAL 123</h1>
+        <ul>
+          <li>Tailstrike in 1978</li>
+          <li>Bad repair to aft bulkhead</li>
+          <li>Explosive decompression</li>
+        </ul>
+      </section>
+      <section>
+        <h1>JAL 123</h1>
+        <img src='jal123.jpg'>
+      </section>
+      <section>
+        <h1>JAL 123</h1>
+        <ul>
+          <li>Total hydraulic loss</li>
+          <li>35 minutes flight time</li>
+          <li>Crash in remote area late evening</li>
+          <li>Initial reports suggested no survivors</li>
+          <li>Actually 4, by morning</li>
+        </ul>
+      </section>
+    </section>
+    <section>
 		</section>
 		<section>
 			<section>
-			<h1>UAL 232</h1>
+			<h1>United 232</h1>
 			<p class='fragment'>Captain Al Haynes: <q>&ldquo;[...] but I really have my doubts you'll see us standing up, honey.&rdquo;</q></p>
 			<p class='fragment'>Captain Al Haynes: <q>&ldquo;Won't this be a fun landing?&rdquo;</q></p>
 			<p class='fragment'>Sioux City Approach: <q>&ldquo;You're cleared to land on any runway.&rdquo;</q></p>
 			<p class='fragment'>Captain Al Haynes: <q>&ldquo;[Laughter] Roger. [Laughter] You want to be particular and make it a runway, huh?&rdquo;</q></p>
 			</section>
 			<section>
-			<h1>UAL 232</h1>
+			<h1>United 232</h1>
 			<p class='fragment'>Normal Landing: 140 knots, 200fpm.</p>
 			<p class='fragment'>232 Landing: 215 knots, 1,850fpm.</p>
-			<p class='fragment'>unknown: <q>&ldquo;Left throttle, left, left, left, left ...&rdquo;</q></p>
+			<!-- <p class='fragment'>unknown: <q>&ldquo;Left throttle, left, left, left, left ...&rdquo;</q></p>
 			<p class='fragment'>unknown: <q>&ldquo;God!&rdquo;</q></p>
-			<p class='fragment'>Cockpit sound: <em>[Sound of impact]</em></p>
+			<p class='fragment'>Cockpit sound: <em>[Sound of impact]</em></p> -->
 			</section>
+      <section data-state='videoPlayer'>
+        <h1>United 232<h1>
+        <video><source src='ua232-crash.mp4'></video>
+      </section>
 			<section>
-			<h1>UAL 232</h1>
+			<h1>United 232</h1>
 			<p>112 killed, a third due to smoke.</p>
 			<p>184 survived - almost two thirds.</p>
 			<p>Cockpit wreckage, waist high, not found for 35 minutes.</p>
@@ -217,13 +332,38 @@
     </div>
     <script src="lib/js/head.min.js"></script>
     <script src="js/reveal.min.js"></script>
- 
+
     <script>
-        // Required, even if empty.
+       // Required, even if empty.
         Reveal.initialize({
-        });
-	Reveal.addEventListener('year1978', function() { console.log("Start playing Le Freak"); });
-	Reveal.addEventListener('landing', function() { console.log("Fade in aircraft landing"); });
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				//parallaxBackgroundImage: "images/clouds.png",
+				//parallaxBackgroundSize: '1895px 160px',
+				//parallaxBackgroundHorizontal: 150,
+				//parallaxBackgroundVertical: 30,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+      });
+  Reveal.addEventListener('year1978', function() { document.getElementById('lefreak').play(); });
+  Reveal.addEventListener('year1977', function() { document.getElementById('abba').play(); });
+  Reveal.addEventListener('year1989', function() { document.getElementById('shout').play(); });
+  Reveal.addEventListener('year1985', function() { document.getElementById('toysoldiers').play(); });
+	Reveal.addEventListener('videoPlayer', function() { document.getElementById('ua232-crash').play(); });
     </script>
 </body>
 </html>
